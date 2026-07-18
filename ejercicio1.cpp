@@ -3,7 +3,10 @@ using namespace std;
 int main(){
 int num;
 cout<<"Introducir un numero entero: ";
-cin>>num;
+if (!(cin >> num)) {
+        cout << "Error: debe ingresar un numero entero valido." << endl;
+        return 1;
+    }
 if(num>0){
 cout<<"El numero es positivo";
 } else if(num<0){
